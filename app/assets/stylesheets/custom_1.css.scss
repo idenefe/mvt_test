@@ -1,2 +1,39 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
+
+.center{
+  text-align:center;
+}
+#main-bg{
+  background-color:#1c2538;
+}
+.bg-2{
+  background-color:#e0e0e0;
+  h2{
+    
+  }
+}
+.jumbotron{
+  h1, h2{
+  margin-bottom:40px;
+  }
+}
+.center-vertical{
+  min-height: 100%;  //Fallback for non-vh browsers
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+}
+.temp-border{
+  border:1px dashed red;
+  padding:3px;
+}
+.temp-red{
+  background-color:rgba(255,0,0,.2);
+}
+.temp-blue{
+  background-color:rgba(0,0,255,.2);
+}
+.temp-green{
+  background-color:rgba(0,255,0,.2);
+}
