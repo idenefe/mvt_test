@@ -5,7 +5,7 @@
     <%=if not yield(:title).empty?
         yield(:title)
       else
-        "MavaTech"
+        "MavaTech";
       end
     %>
   </title>
@@ -14,8 +14,8 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
-
-<%= yield %>
-
+  <%= render 'partials/msg'%>
+  <%= yield %>
+  <%= debug(params) if Rails.env.development?%>
 </body>
 </html>
